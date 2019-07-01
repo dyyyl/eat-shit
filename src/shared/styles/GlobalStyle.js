@@ -4,7 +4,7 @@ import normalize from './normalize';
 import theme from './theme';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Work+Sans:300|Montserrat:400,600');
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,500|Montserrat:400,600');
 
   ${normalize};
 
@@ -28,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-family: ${theme.font.primary};
+    font-weight: 500;
     ${theme.fontSize.xlarge};
   }
 
