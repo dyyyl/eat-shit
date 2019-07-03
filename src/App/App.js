@@ -3,14 +3,20 @@ import React from 'react';
 import Header from 'shared/components/Header';
 import fetchData from 'shared/helpers/fetchData';
 import GlobalStyle from 'shared/styles/GlobalStyle';
+
+import Input from './Input';
 import Layout from './Layout';
+import Results from './Results';
 
 const App = () => {
   fetchData();
   return (
     <>
       <Header />
-      <Layout />
+      <Layout>
+        <Input />
+        <Results />
+      </Layout>
       <GlobalStyle />
     </>
   );
