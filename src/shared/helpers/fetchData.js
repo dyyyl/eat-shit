@@ -1,14 +1,14 @@
 import yelp from 'shared/api/yelp';
 
-const fetchData = async () => {
+const fetchData = async (location) => {
   const response = await yelp.get('/businesses/search', {
     params: {
-      location: 'berlin',
+      location,
       term: 'tacos',
       limit: 5,
     },
   });
-  console.log(response);
+  console.log(response.data.businesses);
 };
 
 export default fetchData;
