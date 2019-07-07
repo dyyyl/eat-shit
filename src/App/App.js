@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from 'shared/components/Header';
+import Header from 'App/Header';
 import fetchData from 'shared/helpers/fetchData';
 import GlobalStyle from 'shared/styles/GlobalStyle';
 

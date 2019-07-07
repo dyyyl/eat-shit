@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Time from '../Time';
+import Time from 'shared/components/Time';
 
 import HeaderContainer from './HeaderContainer';
 import Logo from './Logo';
